@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+     justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.quiz-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.quiz-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#startQuizButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto;
+}
+
+#startQuizButton:hover {
+    background-color: #45a049;
+}
+
+#quiz {
+    display: none;
+}
+.sticky-timer {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.timer-text {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.question label {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.question input[type="radio"] {
+    margin-right: 10px;
+}
+
+.correct {
+    background-color: #d4edda; /* Zielone tło dla poprawnych odpowiedzi */
+}
+
+.incorrect {
+    background-color: #f8d7da; /* Czerwone tło dla niepoprawnych odpowiedzi */
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #e9ffe9;
+    border-radius: 5px;
+    display: none;
+}
+
+.result-container p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+#finishQuizButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+#finishQuizButton:hover {
+    background-color: #45a049;
+}

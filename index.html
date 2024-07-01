@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Żeglarski</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="quiz-wrapper">
+        <div id="timer-container" class="sticky-timer">
+            <p class="timer-text">Do końca egzaminu pozostało:</p>
+            <span id="timer">00:00</span>
+        </div>
+		<div class="quiz-container">
+		<h1>Quiz Żeglarski</h1>
+		<button id="startQuizButton" onclick="console.log(typeof startQuiz)">Rozpocznij test na żeglarza jachtowego</button>
+		<form id="quiz" style="display: none;">
+			<div class="question" data-question="q1">
+                <p>Pytanie 1: Co to jest fok?</p>
+                <label><input type="radio" name="q1" value="a" data-correct="true"> a)żagiel przedni</label><br>
+                <label><input type="radio" name="q1" value="b"> b) główny żagiel na jachcie typu slup za masztem</label><br>
+                <label><input type="radio" name="q1" value="c"> c) Urządzenie do pomiaru wiatru</label>
+            </div>
+            <div class="question" data-question="q2">
+                <p>Pytanie 2: Co to jest slup?</p>
+                <label><input type="radio" name="q2" value="a"> a) jest to typ ożaglowania jachtu mającego 2 maszty i 3 żagle</label><br>
+                <label><input type="radio" name="q2" value="b" data-correct="true"> b) jest to typ ożaglowania jachtu mającego 1 maszt i 2 żagle (fok i grot) </label><br>
+                <label><input type="radio" name="q2" value="c"> c) jest to typ ożaglowania jachtu mającego jeden maszt i jeden żagiel</label>
+            </div>
+            <div class="question" data-question="q3">
+                <p>Pytanie 3: Co to jest boja?</p>
+                <label><input type="radio" name="q3" value="a"> a) Typ żagla</label><br>
+                <label><input type="radio" name="q3" value="b"> b) Urządzenie do sterowania jachtem</label><br>
+                <label><input type="radio" name="q3" value="c" data-correct="true"> c) Pływający znacznik na wodzie</label>
+            </div>
+            <div class="question" data-question="q4">
+                <p>Pytanie 4: Co to jest kotwica?</p>
+                <label><input type="radio" name="q4" value="a"> a) Element służący do sterowania jachtem</label><br>
+                <label><input type="radio" name="q4" value="b" data-correct="true"> b) Narzędzie do zatrzymywania łodzi</label><br>
+                <label><input type="radio" name="q4" value="c"> c) Rodzaj żagla</label>
+            </div>
+            <div class="question" data-question="q5">
+                <p>Pytanie 5: Co to jest dziób?</p>
+                <label><input type="radio" name="q5" value="a" data-correct="true"> a) Przednia część łodzi</label><br>
+                <label><input type="radio" name="q5" value="b"> b) Tylna część łodzi</label><br>
+                <label><input type="radio" name="q5" value="c"> c) Środkowa część łodzi</label>
+            </div>
+            <div class="question" data-question="q6">
+                <p>Pytanie 6: Co to jest rufa?</p>
+                <label><input type="radio" name="q6" value="a"> a) Przednia część łodzi</label><br>
+                <label><input type="radio" name="q6" value="b" data-correct="true"> b) Tylna część łodzi</label><br>
+                <label><input type="radio" name="q6" value="c"> c) Środkowa część łodzi</label>
+            </div>
+            <input type="button" id="finishQuizButton" value="Zakończ Quiz">
+        </form>
+        <div id="result" class="result-container">
+            <p id="score"></p>
+        </div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
